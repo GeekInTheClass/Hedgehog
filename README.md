@@ -12,7 +12,7 @@ Hanna
 )
 ![이수근께스](http://t1.daumcdn.net/tvpot/thumb/s363ctOYRRGgpn7jGduRnSg/thumb.png?ts=1514447611)
 
-* D
+* 께
 * B
 * C
 
