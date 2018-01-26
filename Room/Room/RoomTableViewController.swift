@@ -26,9 +26,11 @@ class RoomTableViewController: UITableViewController {
         
         cell.RoomtitleLabel.text = Room.teamName
         cell.RoomNoticeLabel.text = Room.notice
+        print (Room.notice)
         
         return cell
     }
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -74,14 +76,25 @@ class RoomTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "RoomDetailSegue" {
+            if let destination = segue.destination as? RoomDetailViewController, let selectedIndex = self.tableView.indexPathForSelectedRow{
+
+                destination.title = rooms[selectedIndex.row].teamName
+                destination.content = rooms[selectedIndex.row].notice
+                let cell = self.tableView.dequeueReusableCell(withIdentifier: "Room" , for: selectedIndex) as! RoomTableViewCell
+                destination.receivedimage = cell.RoomImageView.image
+            }
+        }
+        
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

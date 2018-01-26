@@ -42,9 +42,9 @@ class User {
 }
 
 class Person{
-    let user: User
-//    let name : String
-//    let id : String
+    //let user: User
+    let name : String
+    let id : String
     let friend : Int
     let count : Int
     let personType : PersonType

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D415DE0201B8E5F00D16072 /* RoomDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D415DDF201B8E5F00D16072 /* RoomDetailViewController.swift */; };
 		84BC4B592018724800F9C062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC4B582018724800F9C062 /* AppDelegate.swift */; };
 		84BC4B5E2018724800F9C062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5C2018724800F9C062 /* Main.storyboard */; };
 		84BC4B602018724800F9C062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5F2018724800F9C062 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D415DDF201B8E5F00D16072 /* RoomDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailViewController.swift; sourceTree = "<group>"; };
 		84BC4B552018724800F9C062 /* Room.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Room.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BC4B582018724800F9C062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84BC4B5D2018724800F9C062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				84BC4B6A2018725800F9C062 /* Room.swift */,
 				84BC4B6C2018738D00F9C062 /* RoomTableViewCell.swift */,
 				84BC4B6E2018746700F9C062 /* RoomTableViewController.swift */,
+				0D415DDF201B8E5F00D16072 /* RoomDetailViewController.swift */,
 			);
 			path = Room;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				84BC4B6F2018746700F9C062 /* RoomTableViewController.swift in Sources */,
 				84BC4B592018724800F9C062 /* AppDelegate.swift in Sources */,
 				84BC4B6D2018738D00F9C062 /* RoomTableViewCell.swift in Sources */,
+				0D415DE0201B8E5F00D16072 /* RoomDetailViewController.swift in Sources */,
 				84BC4B6B2018725800F9C062 /* Room.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

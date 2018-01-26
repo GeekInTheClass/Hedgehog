@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -49,6 +50,7 @@
                                     <outlet property="RoomImageView" destination="kYT-et-56v" id="Nb5-Be-a33"/>
                                     <outlet property="RoomNoticeLabel" destination="oRR-YS-0sa" id="isr-Tv-I9j"/>
                                     <outlet property="RoomtitleLabel" destination="Sn6-Ng-JwP" id="WaU-OP-J7E"/>
+                                    <segue destination="yMU-of-6F8" kind="show" identifier="RoomDetailSegue" id="sam-cU-67I"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -62,6 +64,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCB-vo-1d3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="341.60000000000002" y="135.38230884557723"/>
+        </scene>
+        <!--Room Detail View Controller-->
+        <scene sceneID="26J-2Y-YHi">
+            <objects>
+                <viewController id="yMU-of-6F8" customClass="RoomDetailViewController" customModule="Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wiC-7k-gSh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="65L-IC-hzX">
+                                <rect key="frame" x="123" y="95" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1Z-b5-IbA">
+                                <rect key="frame" x="0.0" y="238" width="375" height="429"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Cec-bF-MST"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentlabel" destination="w1Z-b5-IbA" id="fLS-wU-q8Z"/>
+                        <outlet property="image" destination="65L-IC-hzX" id="nLI-NR-mdD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r2O-Wm-Tb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024.8" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eeL-X3-ZjT">
